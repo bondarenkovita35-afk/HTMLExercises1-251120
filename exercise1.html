@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Form fields</title>
+    <!-- Sidans titel i webbläsaren -->
+
+    <meta charset="utf-8" />
+    <!-- Teckenkodning för svenska bokstäver -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Lägger till Bootstrap för snygg stil -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Laddar jQuery som Bootstrap använder -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Laddar Bootstrap JavaScript -->
+
+</head>
+
+
+<body>
+
+    <div class="container py-5">
+        <!-- Bootstrap container med lite luft runt -->
+
+        <h4><span class="text-danger">Different</span> input types in HTML</h4>
+        <!-- Rubrik. "text-danger" gör text röd -->
+
+        <form action="https://formshow.systementor.se/" method="post">
+            <!-- Form som skickar data till servern med POST -->
+
+            <div class="form-group">
+                <!-- Grupp för ett fält -->
+
+                <label for="dateInput">Date</label>
+                <!-- Text som beskriver fältet -->
+
+                <input type="date" id="dateInput" name="dateInput" class="form-control">
+                <!-- Fält där användaren väljer ett datum -->
+
+            </div>
+
+            <div class="form-group">
+                <!-- Ny grupp för nästa fält -->
+
+                <label for="timeInput">Time</label>
+                <!-- Beskrivning av fältet -->
+
+                <input type="time" id="timeInput" name="timeInput" class="form-control">
+                <!-- Fält för tid (klockslag) -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="dateTimeInput">Date & Time</label>
+                <!-- Beskrivning av datum + tid -->
+
+                <input type="datetime-local" id="dateTimeInput" name="dateTimeInput" class="form-control">
+                <!-- Användaren väljer datum och tid tillsammans -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="weekInput">Week</label>
+                <!-- Beskrivning av veckoväljaren -->
+
+                <input type="week" id="weekInput" name="weekInput" class="form-control">
+                <!-- Fält för att välja vecka -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="monthInput">Month</label>
+                <!-- Beskrivning för månad -->
+
+                <input type="month" id="monthInput" name="monthInput" class="form-control">
+                <!-- Användaren väljer månad och år -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="emailInput">Email</label>
+                <!-- Text som säger att användaren ska skriva e-post -->
+
+                <input type="email" id="emailInput" name="emailInput" class="form-control"
+                    placeholder="namn@example.com">
+                <!-- E-postfält med automatisk kontroll -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="telInput">Phone</label>
+                <!-- Text som beskriver telefonnummer -->
+
+                <input type="tel" id="telInput" name="telInput" class="form-control" placeholder="+46 70 123 45 67">
+                <!-- Fält för telefonnummer -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="urlInput">Website</label>
+                <!-- Beskrivning av URL-fältet -->
+
+                <input type="url" id="urlInput" name="urlInput" class="form-control" placeholder="https://example.com">
+                <!-- Fält där användaren skriver en webbadress -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="searchInput">Search</label>
+                <!-- Text för sökfält -->
+
+                <input type="search" id="searchInput" name="searchInput" class="form-control" placeholder="Sök här...">
+                <!-- Fält för sökning -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="rangeInput">Range</label>
+                <!-- Text som beskriver slider-fält -->
+
+                <input type="range" id="rangeInput" name="rangeInput" class="custom-range" min="0" max="100" value="50">
+                <!-- Slider för att välja ett värde mellan 0 och 100 -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="numberInput">Number</label>
+                <!-- Beskrivning av nummerfält -->
+
+                <input type="number" id="numberInput" name="numberInput" class="form-control" min="0" max="10"
+                    value="1">
+                <!-- Siffra med pilar upp/ner -->
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="colorInput">Color</label>
+                <!-- Text som säger att användaren väljer färg -->
+
+                <input type="color" id="colorInput" name="colorInput" class="form-control" value="#00ff00">
+                <!-- Fält för färgval -->
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- Knapp som skickar formuläret -->
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
